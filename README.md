@@ -242,7 +242,7 @@ pytest tests/test_user.py
 
 The Docker image is available on Docker Hub:
 
-[LINK]
+Link: https://hub.docker.com/r/ps223/assignment10_2
 
 Pull the image:
 
