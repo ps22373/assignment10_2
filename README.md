@@ -214,51 +214,40 @@ docker run -it --rm <image-name>
 
 ---
 
-# 📝 7. Submission Instructions
+# 7. Running Tests Locally
 
-After finishing your work:
+Make sure your virtual environment is activated and dependencies are installed.
+
+Run all tests using:
 
 ```bash
-git add .
-git commit -m "Complete Module X"
-git push origin main
+pytest
 ```
 
-Then submit the GitHub repository link as instructed.
+To run tests with verbose output:
+
+```bash
+pytest -v
+```
+
+To run a specific test file (example test_user.py):
+
+```bash
+pytest tests/test_user.py
+```
 
 ---
 
-# 🔥 Useful Commands Cheat Sheet
+# 8. Docker Hub Repository
 
-| Action                         | Command                                          |
-| ------------------------------- | ------------------------------------------------ |
-| Install Homebrew (Mac)          | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
-| Install Git                     | `brew install git` or Git for Windows installer |
-| Configure Git Global Username  | `git config --global user.name "Your Name"`      |
-| Configure Git Global Email     | `git config --global user.email "you@example.com"` |
-| Clone Repository                | `git clone <repo-url>`                          |
-| Create Virtual Environment     | `python3 -m venv venv`                           |
-| Activate Virtual Environment   | `source venv/bin/activate` / `venv\Scripts\activate.bat` |
-| Install Python Packages        | `pip install -r requirements.txt`               |
-| Build Docker Image              | `docker build -t <image-name> .`                |
-| Run Docker Container            | `docker run -it --rm <image-name>`               |
-| Push Code to GitHub             | `git add . && git commit -m "message" && git push` |
+The Docker image is available on Docker Hub:
+
+[LINK]
+
+Pull the image:
+
+```bash
+docker pull ps223/assignment10
+```
 
 ---
-
-# 📋 Notes
-
-- Install **Homebrew** first on Mac.
-- Install and configure **Git** and **SSH** before cloning.
-- Use **Python 3.10+** and **virtual environments** for Python projects.
-- **Docker** is optional depending on the project.
-
----
-
-# 📎 Quick Links
-
-- [Homebrew](https://brew.sh/)
-- [Git Downloads](https://git-scm.com/downloads)
-- [Python Downloads](https://www.python.org/downloads/)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- [GitHub SSH Setup Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
