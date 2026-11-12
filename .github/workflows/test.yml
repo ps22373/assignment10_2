@@ -79,7 +79,6 @@ jobs:
           exit-code: '0'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
-          trivyignores: .trivyignore
   
   deploy:
     needs: security
